@@ -20,7 +20,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para instalar o projeto, siga estas etapas:
 
 ```
-docker-compose up -d
+docker-compose up -d --build (para buildar e iniciar o RabbitMQ)
 ```
 
 ## ☕ Usando o projeto
@@ -28,8 +28,8 @@ docker-compose up -d
 Para usar o projeto, siga estas etapas:
 
 ```
-Inicia o serviço: docker-compose up -d
-Para o serviço: docker-compose down
+Primeiro: execute o receiver.py (python3 receiver.py) para iniciar um canal.
+Segundo: execute o publisher.py (python3 publisher.py) para públicar no canal que o receiver.py está usando
 ```
 
 ## 📫 Contribuindo para este projeto
